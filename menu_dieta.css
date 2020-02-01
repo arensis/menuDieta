@@ -1,0 +1,38 @@
+.grid-settings {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 3px;
+	background-color: black;
+	padding: 3px;
+}
+
+.grid-settings > div {
+	background-color: white;
+}
+
+.grid-header-cell {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.logo {
+	width: 40%;
+}
+
+.logo-cell {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	grid-column: 1;
+	grid-row: 1 / 4;
+	background-color: #98BBD5;
+}
+
+.column-title {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
