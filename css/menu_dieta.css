@@ -1,9 +1,9 @@
 .grid-settings {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
-	grid-gap: 3px;
+	grid-gap: 2px;
 	background-color: black;
-	padding: 3px;
+	padding: 2px;
 }
 
 .grid-settings > div {
