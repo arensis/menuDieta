@@ -1,9 +1,16 @@
+.footnote {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: end;
+}
+
 .grid-settings {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	grid-gap: 2px;
 	background-color: black;
 	padding: 2px;
+	font-size: 16px;
 }
 
 .grid-settings > div {
