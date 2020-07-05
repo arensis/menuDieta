@@ -1,15 +1,17 @@
-$(function () {
-    setNavigation();
-});
+$(function () { setRouterLinkActive(); });
 
-function setNavigation() {
-    var path = window.location.pathname;
+function setRouterLinkActive() {
+    var absolutePath = window.location.pathname;
 
-    $(".nav a").each(function () {
-        var href = $(this).attr('href');
-
-        if (path.includes(href)) {
-            $(this).closest('a').addClass('active');
-        }
-    });
+    if(absolutePath.endsWith('menuDieta/')) {
+        $("#default").addClass('active');
+    } else {
+        $(".nav a").each(function () {
+            var relativePath = $(this).attr('href');
+    
+            if (absolutePath.includes(relativePath)) {
+                $(this).closest('a').addClass('active');
+            }
+        });
+    }
 }
